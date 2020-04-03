@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This blog application was based from Avdi Grimm's `Objects on Rails` 2012 book. 
 
-Things you may want to cover:
+This is my attempt to understand more about Rails and how I can build applications away from the usual MVC pattern.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Configuration I've done that is different from the book:
+* Ruby 2.6.3
+* Rails 6
+* Haml
