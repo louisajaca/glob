@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glob</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="sidebar two columns">
+      <nav> <ul>
+        <li><%= link_to "New post...", new_post_path %></li> </ul>
+      </nav>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>
