@@ -1,6 +1,5 @@
 class Blog
 
-  attr_reader :entries
   attr_writer :post_source
 
   def initialize
@@ -15,6 +14,10 @@ class Blog
     "The quick brown fox jumped over the lazy dog"
   end
 
+  def entries
+    @entries.sort_by{|e| e.pubdate}.reverse.take(10)
+  end
+
   def new_post(*args)
     post_source.call(*args).tap do |p|
       p.blog = self
@@ -22,7 +25,7 @@ class Blog
   end
 
   def add_entry(entry)
-    entries << entry
+    @entries << entry
   end
 
   private
